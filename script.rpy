@@ -11,6 +11,8 @@ define sd = Character("San Diego", color="#AAED60")
 
 # The game starts here.
 
+default box = 1
+
 label start:
 
     # Show a background. This uses a placeholder by default, but you can
@@ -44,6 +46,7 @@ label start:
         xalign 0.0
     show mccall dark at right
     show mccall with dis
+    $ box = 2
 
     mc "Don’t mention it. I just wanted my good friend Laffey to know how great it is to eat popsicles on the beach under a parasol."
 
@@ -51,6 +54,7 @@ label start:
     with dis
     show laffey
     with dis
+    $ box = 1
 
     la "Uh huh. It’s really great."
 
@@ -58,6 +62,7 @@ label start:
     with dis
     show mccall
     with dis
+    $ box = 2
 
     mc "Right? Nothing better than wasting your day off eating ice cream until the sun sets."
 
@@ -65,6 +70,7 @@ label start:
     with dis
     show laffey
     with dis
+    $ box = 1
 
     la "But it’s only 10AM. Ice cream is great and all, but won’t you get a stomach ache eating that much?"
 
@@ -72,6 +78,7 @@ label start:
     with dis
     show mccall
     with dis
+    $ box = 2
 
     mc "Nope. I’ve got an iron gut when it comes to ice cream."
 
@@ -79,6 +86,7 @@ label start:
     with dis
     show laffey
     with dis
+    $ box = 1
 
     la "Iron gut? Not a second stomach?"
 
@@ -86,6 +94,7 @@ label start:
     with dis
     show mccall
     with dis
+    $ box = 2
 
     mc "Yeah. My stomach is strong as iron!"
 
@@ -93,6 +102,7 @@ label start:
     with dis
     show laffey
     with dis
+    $ box = 1
 
     la "Lucky. I think two or three is my limit. Like how I could barely eat anything at the mushroom party yesterday. It sucked."
 
@@ -100,6 +110,7 @@ label start:
     with dis
     show mccall
     with dis
+    $ box = 2
 
     mc "I don’t really care for mushrooms either. But hey, at least you can drink me under the table, Laffey."
 
@@ -107,6 +118,7 @@ label start:
     with dis
     show laffey
     with dis
+    $ box = 1
 
     la "That’s true."
 
@@ -114,6 +126,7 @@ label start:
     with dis
     show mccall
     with dis
+    $ box = 2
 
     mc "It’s hard to fill up on your favorite things, but if you get too greedy, you’ll pay for it in the end. As for mushrooms, you might be better off not eating too many."
 
@@ -121,6 +134,7 @@ label start:
     with dis
     show laffey
     with dis
+    $ box = 1
 
     la "What do you mean?"
 
@@ -128,6 +142,7 @@ label start:
     with dis
     show mccall
     with dis
+    $ box = 2
 
     mc "Like, you know all those mushrooms San Diego’s been growing in her room?"
 
@@ -135,6 +150,7 @@ label start:
     with dis
     show laffey
     with dis
+    $ box = 1
 
     la "That’s a little weird no matter which way you put it."
 
@@ -142,11 +158,13 @@ label start:
     with dis
     show mccall
     with dis
+    $ box = 2
 
     mc "Right? She gets all sparkly and giggly from inhaling those spores."
 
     show laffey
     with dis
+    $ box = 1
 
     "{color=#AAED60}Both{/color}" "Yeahhh."
 
@@ -222,7 +240,7 @@ label start:
     mc "Well, I can’t argue with that."
 
     hide mccall
-    show long island
+    show long island at center, shake
 
     li "But actually I wish I wasn’t so careful just yesterday. I should’ve gone."
 

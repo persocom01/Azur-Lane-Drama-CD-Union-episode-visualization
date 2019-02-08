@@ -105,8 +105,12 @@ screen say(who, what):
 
             window:
                 id "namebox"
-                style "namebox"
                 text who id "who"
+
+                if box == 2:
+                    style "namebox2"
+                else:
+                    style "namebox"
 
         text what id "what"
 
@@ -146,6 +150,16 @@ style namebox:
     ysize gui.namebox_height
 
     background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
+    padding gui.namebox_borders.padding
+
+style namebox2:
+    xpos 1.0
+    xanchor 1.0
+    xsize gui.namebox_width
+    ypos gui.name_ypos
+    ysize gui.namebox_height
+
+    background Frame(im.Flip("gui/namebox.png", horizontal=True), Borders(165, 8, 5, 3), tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
 style say_label:
