@@ -7,7 +7,8 @@ You need the Ren'Py engine to run this project. Simply add it to a project folde
 
 ## Built With
 
-* [https://www.renpy.org/) - The engine used
+* [https://www.renpy.org/) - The engine used.
+* [https://azurlane.yo-star.com/#/) - Art assets used.
 
 ## License
 
