@@ -12,4 +12,4 @@ You need the Ren'Py engine to run this project. Simply add it to a project folde
 
 ## License
 
-This project is licensed under a modified MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under a MIT License - see the [LICENSE.md](LICENSE.md) file for details
