@@ -1,4 +1,4 @@
-# Azur-Land-Drama-CD-Union-episode-visualization
+# Azur-Lane-Drama-CD-Union-episode-visualization
 A simple visual novel using the Ren'Py engine based on the Azur Lane Union Drama CD.
 
 ## Getting Started
