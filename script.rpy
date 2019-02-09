@@ -21,12 +21,12 @@ label start:
 
     window hide
     scene black
-    show skip at skip_button zorder 999
+    show skip at skip_button, skip_button_animation onlayer ontop
     show opening_text "Azur Lane Drama CD Union Episode\n\nPart 1" with Dissolve(2)
     hide opening_text with Dissolve(2)
     scene bg beach
-    show skip at skip_button zorder 999
-    show next at next_prompt onlayer ontop
+    show skip at skip_button, skip_button_animation onlayer ontop
+    show next at next_prompt, next_prompt_animation onlayer ontop
     with Fade(0, 0, 2)
 
     # This shows a character sprite. A placeholder is used, but you can

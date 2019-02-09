@@ -4,7 +4,15 @@ transform skip_button:
     xanchor 1.0
     xpos 1280
     yanchor 0.0
-    ypos 10
+    ypos 0
+
+
+transform skip_button_animation:
+    alpha 1.0
+    linear 0.75 alpha 0.4
+    pause 0.5
+    linear 0.75 alpha 1.0
+    repeat
 
 
 transform next_prompt:
@@ -12,6 +20,13 @@ transform next_prompt:
     xpos 1240
     yanchor 1.0
     ypos 700
+
+
+transform next_prompt_animation:
+    yoffset 0
+    linear 0.5 yoffset -10
+    linear 0.5 yoffset 0
+    repeat
 
 
 transform left:
