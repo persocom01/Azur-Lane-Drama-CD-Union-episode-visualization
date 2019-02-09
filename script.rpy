@@ -31,7 +31,7 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show laffey dark
+    show laffey dark at center
     show laffey with dis
 
     # These display lines of dialogue.
@@ -40,10 +40,10 @@ label start:
 
     window hide
     show laffey:
-        linear 0.5 xalign 0.0
+        linear 0.5 xpos 270
     show laffey dark with dissolve
     show laffey dark:
-        xalign 0.0
+        xpos 270
     show mccall dark at right
     show mccall with dis
     $ box = 2
@@ -173,16 +173,16 @@ label start:
 
     "pause for seagulls"
 
-    show mccall
+    show mccall at center
 
     mc "It’s nice to just unwind and eat."
 
     window hide
     show mccall:
-        linear 0.5 xalign 1.0
+        linear 0.5 xpos 1010
     show mccall dark with dissolve
     show mccall dark:
-        xalign 1.0
+        xpos 1010
     show laffey at left
 
     la "I think the red and white ones are prettier so they’re tastier."
@@ -194,18 +194,18 @@ label start:
 
     hide laffey
     hide mccall
-    show long island dark
+    show long island dark at center
     show long island with dis
 
     li "Heyyy! I found Laffey and McCall! Heeeeyyyy!"
 
     hide long island
-    show laffey
+    show laffey at center
 
     la "Long Island."
 
     hide laffey
-    show mccall
+    show mccall at center
 
     mc "Where’s the fire?"
 
@@ -215,12 +215,12 @@ label start:
     li "Listen up. Both of you went to San Diego’s mushroom party last night?"
 
     hide long island
-    show laffey
+    show laffey at center
 
     la "Yup. We were there. We were just talking about it actually."
 
     hide laffey
-    show mccall
+    show mccall at center
 
     mc "Uh huh. You didn’t go, Long Island?"
 
@@ -230,12 +230,12 @@ label start:
     li "I may be a ghost, but I’m not gonna risk my life eating unidentified mushrooms."
 
     hide long island
-    show laffey
+    show laffey at center
 
     la "Did we risk our lives?"
 
     hide laffey
-    show mccall
+    show mccall at center
 
     mc "Well, I can’t argue with that."
 
@@ -245,12 +245,12 @@ label start:
     li "But actually I wish I wasn’t so careful just yesterday. I should’ve gone."
 
     hide long island
-    show laffey
+    show laffey at center
 
     la "Why? Do you like mushrooms?"
 
     hide laffey
-    show mccall
+    show mccall at center
 
     mc "I think not going was the right move. Honestly."
 
@@ -260,21 +260,21 @@ label start:
     li "It actually looks like you haven’t changed at all. Lemme see."
 
     hide long island
-    show laffey
+    show laffey at center
 
     la "Why are you staring at our breasts, Long Island?"
 
     hide laffey
-    show mccall
+    show mccall at center
 
     mc "You’re creeping me out. What the hell?"
 
     window hide
     show mccall:
-        linear 0.5 xalign 1.0
+        linear 0.5 xpos 1010
     show mccall dark with dissolve
     show mccall dark:
-        xalign 1.0
+        xpos 1010
     show long island at left
 
     li "Hmm. Seems I can’t tell without a more direct approach!"
