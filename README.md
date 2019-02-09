@@ -15,10 +15,9 @@ You need the Ren'Py engine to run this project. Add the project folder to Ren'Py
 
 ## Current status
 
-In development. About 30% complete but there is good reason to believe the project will be completed.
+In development.
 
 Current work:
-* Repositioning characters slightly off edge of border.
 * Adding skip and next images.
 * Adding more animations.
 
