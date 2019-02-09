@@ -211,3 +211,7 @@ init python:
 ## by a slash.
 
 # define build.itch_project = "renpytom/test-project"
+
+# Added options not present in boilerplate options.
+# This one is needed to get an image to display on top of the overlay.
+define config.layers = [ 'master', 'transient', 'screens', 'overlay', 'ontop' ]

@@ -21,10 +21,12 @@ label start:
 
     window hide
     scene black
-    show opening_text "Azur Lane Drama CD Union Episode\nPart 1" with Dissolve(2)
-    hide opening_text
-    with Dissolve(2)
+    show skip at skip_button zorder 999
+    show opening_text "Azur Lane Drama CD Union Episode\n\nPart 1" with Dissolve(2)
+    hide opening_text with Dissolve(2)
     scene bg beach
+    show skip at skip_button zorder 999
+    show next at next_prompt onlayer ontop
     with Fade(0, 0, 2)
 
     # This shows a character sprite. A placeholder is used, but you can
@@ -210,7 +212,7 @@ label start:
     mc "Where’s the fire?"
 
     hide mccall
-    show long island at center, bobble
+    show long island at center, bobble2
 
     li "Listen up. Both of you went to San Diego’s mushroom party last night?"
 
@@ -225,7 +227,7 @@ label start:
     mc "Uh huh. You didn’t go, Long Island?"
 
     hide mccall
-    show long island at center, bobble
+    show long island at center, bobble1
 
     li "I may be a ghost, but I’m not gonna risk my life eating unidentified mushrooms."
 

@@ -1,6 +1,10 @@
 # Define all images here.
 
+image skip = "Skip.png"
+
 image opening_text = ParameterizedText(xalign=0, yalign=0.5, xoffset=165)
+
+image next = "Next.png"
 
 image laffey = im.Scale("Laffey.png", 609.6, 819.2)
 image laffey dark = im.MatrixColor(im.Scale("Laffey.png", 609.6, 819.2), im.matrix.brightness(-0.6))

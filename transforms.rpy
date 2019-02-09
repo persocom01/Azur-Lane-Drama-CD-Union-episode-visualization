@@ -1,5 +1,19 @@
 # Define custom transforms here.
 
+transform skip_button:
+    xanchor 1.0
+    xpos 1280
+    yanchor 0.0
+    ypos 10
+
+
+transform next_prompt:
+    xanchor 1.0
+    xpos 1240
+    yanchor 1.0
+    ypos 700
+
+
 transform left:
     xanchor 0.5
     xpos 270
@@ -21,12 +35,18 @@ transform right:
     ypos 450
 
 
-transform bobble:
+transform bobble1:
     yoffset 0
-    easein_quad 0.15 yoffset -25
-    easeout_quad 0.15 yoffset 0
-    easein_quad 0.15 yoffset -25
-    easeout_quad 0.15 yoffset 0
+    easein_quad 0.1 yoffset -25
+    easeout_quad 0.1 yoffset 0
+
+
+transform bobble2:
+    yoffset 0
+    easein_quad 0.1 yoffset -25
+    easeout_quad 0.1 yoffset 0
+    easein_quad 0.1 yoffset -25
+    easeout_quad 0.1 yoffset 0
 
 
 transform shake:
