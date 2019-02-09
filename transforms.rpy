@@ -9,9 +9,8 @@ transform skip_button:
 
 transform skip_button_animation:
     alpha 1.0
-    linear 0.75 alpha 0.4
-    pause 0.5
-    linear 0.75 alpha 1.0
+    linear 1 alpha 0.4
+    linear 1 alpha 1.0
     repeat
 
 
@@ -64,7 +63,18 @@ transform bobble2:
     easeout_quad 0.1 yoffset 0
 
 
-transform shake:
+transform grope:
+    xoffset 0
+    easein_quad 0.5 xoffset 550
+
+
+transform shake1:
+    xoffset 0
+    linear 0.4 xoffset 25
+    linear 0.4 xoffset 0
+
+
+transform shake2:
     xoffset 0
     linear 0.4 xoffset 25
     linear 0.4 xoffset 0

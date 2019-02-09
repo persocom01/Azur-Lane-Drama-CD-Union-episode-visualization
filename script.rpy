@@ -27,7 +27,7 @@ label start:
     scene bg beach
     show skip at skip_button, skip_button_animation onlayer ontop
     show next at next_prompt, next_prompt_animation onlayer ontop
-    with Fade(0, 0, 2)
+    with Dissolve(2)
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
@@ -242,7 +242,7 @@ label start:
     mc "Well, I can’t argue with that."
 
     hide mccall
-    show long island at center, shake
+    show long island at center, shake2
 
     li "But actually I wish I wasn’t so careful just yesterday. I should’ve gone."
 
@@ -257,7 +257,7 @@ label start:
     mc "I think not going was the right move. Honestly."
 
     hide mccall
-    show long island at center, shake
+    show long island at center, shake2
 
     li "It actually looks like you haven’t changed at all. Lemme see."
 
@@ -280,85 +280,398 @@ label start:
     show long island at left
 
     li "Hmm. Seems I can’t tell without a more direct approach!"
+
+    window hide
+    show mccall
+    show long island at grope
+    pause 0.5
+    show mccall at bobble1
+
     "(BOING)"
+
+    hide mccall
+    hide long island
+    show laffey at center
+
     la "Gasp"
+
+    hide laffey
+    show mccall at center, bobble1
+
     mc "Wh- what? Don’t just suddenly grab my chest like that."
+
+    hide mccall
+    show long island at center, shake1
+
     li "Hmm. Turns out you haven’t changed at all. Too bad. It was all for nothing."
+
+    hide long island
+    show laffey at center
+
     la "What do you mean?"
+
+    hide laffey
+    show mccall at center, shake2
+
     mc "Tell us what’s going on or I’ll get you with this popsicle."
+
+    hide mccall
+    show long island at center, bobble1
+
     li "Your eyes are scaring me. Okay, settle down, I’ll explain. We can all come out winners here."
+
+    hide long island
+    show laffey at center
+
     la "Winners?"
+
+    hide laffey
+    show mccall at center
+
     mc "Huh?"
+
+    hide mccall
+    show long island at center
+
     li "The truth is I heard San Diego’s mushrooms have some awesome side effects."
+
+    hide long island
+    show mccall at center
+
     mc "Awesome side effects? Like what?"
-    li "Check it out. If you eat San Diego’s mushrooms… your breasts… look bigger!"
+
+    hide mccall
+    show long island at center
+
+    li "Check it out. If you eat San Diego’s mushrooms… your breasts… become bigger!"
+
+    hide long island
+    show laffey at center, shake1
+
     la "Ugh. I’m sleepy."
+
+    hide laffey
+    show mccall at center
+
     mc "Yeah. I think it’s time for a nap."
+
+    hide mccall
+    show long island at center, bobble2
+
     li "Wait wait! Don’t nap! It’s true! Everyone’s been talking about it. This isn’t just something I made up!"
+
+    hide long island
+    show laffey at center
+
     la "But… I’m still the same."
+
+    hide laffey
+    show mccall at center
+
     mc "Mine didn’t get any bigger either."
+
+    hide mccall
+    show long island at center
+
     li "It’s gotta be because you didn’t eat enough, or you ate the wrong kind."
+
+    hide long island
+    show laffey at center
+
     la "Now that you mention it, there were different colored mushrooms."
+
+    hide laffey
+    show mccall at center
+
     mc "I think I ate like a red and white striped one."
+
+    hide mccall
+    show laffey at center
+
     la "Yeah. Same."
+
+    hide laffey
+    show long island at center
+
     li "Hmm. Then the red and white striped one isn’t it. Neither of you took any other mushrooms? Everyone took home what they couldn’t finish eating."
+
+    hide long island
+    show laffey at center
+
     la "I was too full so I didn’t take any."
+
+    hide laffey
+    show mccall at center
+
     mc "Me too."
+
+    hide mccall
+    show long island at center
+
     li "All right. Damn. Okay, we gotta go find some other partygoers. Right! Let’s make our breasts bigger so the Commander will drool at us! Let’s go!"
+
+    hide long island
+    show laffey at center
+
     la "Wait."
+
+    hide laffey
+    show long island at center
+
     li "What’s wrong?"
+
+    hide long island
+    show laffey at center
+
     la "The Commander… likes big breasts?"
+
+    hide laffey
+    show long island at center
+
     li "Umm… he didn’t say so directly. But the bigger ones seem to have more charm."
+
+    hide long island
+    show laffey at center
+
     la "Laffey will go too."
+
+    hide laffey
+    show long island at center
+
     li "Really!? Ehehehe. My party has grown! What do you think, McCall?"
+
+    hide long island
+    show mccall at center
+
     mc "Um. I don’t really care about the size of my chest…"
+
+    hide mccall
+    show long island at center
+
     li "So, you’re not coming?"
+
+    hide long island
+    show mccall at center
+
     mc "Umm… I do want to know if the rumor is true. I’ll go."
+
+    hide mccall
+    show long island at center
+
     li "Da-daaaaan! McCall has joined my party! It’s time for us three to set out on our mushroom search adventure. Let’s go!"
+
+    hide long island
+    show laffey at center
+
     la "Ok."
+
+    scene black
+
     "Break"
+
+    scene bg room
+    show long island at center
+
     li "And so, Long Island and her merry men arrived at San Diego’s room."
+
+    hide long island
+    show laffey at center
+
     la "We’re merry?"
+
+    hide laffey
+    show mccall at center
+
     mc "Well, as merry as a group hunting for breast-growing mushrooms can be."
+
+    hide mccall
+    show long island at center
+
     li "Hey, cut the chatter, it’s an ambush! There may still be mushrooms here."
+
+    hide long island
+
     "Knock knock"
+
+    show long island at center
+
     li "Anybody home!?"
+
+    show san diego dark at center
+    show san diego with dis
+
     sd "Yeess? Who is iiit?"
+
+    hide san diego
+    show long island at center
+
     li "It’s Long Island!"
+
+    hide long island
+    show laffey at center
+
     la "Laffey and McCall too."
+
+    hide laffey
+    show mccall at center
+
     mc "Can we come in?"
+
+    hide mccall
+    show san diego at center
+
     sd "Sure! Ah! Just give me a minute here. Let yourselves in! Welcome welcome!"
+
+    hide san diego
+    show long island at center
+
     li "All right, coming in. Sorry to bother you!"
+
+    hide long island
+    show san diego at center
+
     sd "Hello! Lovely weather, isn’t it? I’m a little tired but let’s dance!"
+
+    hide san diego
+    show laffey at center
+
     la "San Diego’s really dancing."
+
+    hide laffey
+    show mccall at center
+
     mc "She seems kind of tense. Maybe some ice cream would calm her down."
+
+    hide mccall
+    show san diego at center
+
     sd "Huuuh? That’s right! I’ve been dancing nonstop! Kinda weird!"
+
+    hide san diego
+    show long island at center
+
     li "You didn’t even notice you’ve been dancing? It must be… ah! There’s a half-eaten mushroom on the table there!"
+
+    hide long island
+    show laffey at center
+
     la "Did San Diego eat it?"
+
+    hide laffey
+    show san diego at center
+
     sd "Yeah! I ate it! Just about the time I wanted to break into dance! Everybody join me!"
+
+    hide san diego
+    show mccall at center
+
     mc "No. The real reason you’re dancing is because of this mushroom."
+
+    hide mccall
+    show long island at center
+
     li "That sounds right. So then… this star-shaped yellow one with spots all over it must be a dancing mushroom!"
+
+    hide long island
+    show san diego at center
+
     sd "Yeeaahh! Dancing dancing!!"
+
+    hide san diego
+    show laffey at center
+
     la "So then, what were the ones we ate?"
+
+    hide laffey
+    show long island at center
+
     li "Those were fail mushrooms!"
+
+    hide long island
+    show mccall at center
+
     mc "Feels more like a win mushroom to me."
+
+    hide mccall
+    show san diego at center
+
     sd "Win? Fail? Nah! I dunno why everybody came to my room, but you better dance with me!"
+
+    hide san diego
+    show laffey at center
+
     la "Not now. Laffey and friends came to find the mushroom that makes your breasts bigger."
+
+    hide laffey
+    show long island at center
+
     li "That’s right. Long Island and her band of merry men are on a quest for the BUST UP mushroom!"
+
+    hide long island
+    show mccall at center
+
     mc "When you call it a BUST UP mushroom I feel like we’ve fallen into something really shady."
+
+    hide mccall
+    show san diego at center
+
     sd "Eeeeeeh? Is there really a mushroom like that? Amazing!"
+
+    hide san diego
+    show long island at center
+
     li "Yeah! Do you have any more mushrooms laying around, San Diego?"
+
+    hide long island
+    show san diego at center
+
     sd "Nope! That dancing mushroom I just ate was the last one!"
+
+    hide san diego
+    show laffey at center
+
     la "Damn."
+
+    hide laffey
+    show long island at center
+
     li "But we did learn the effect of one type of mushroom. Let’s press on to find the next!"
+
+    hide long island
+    show mccall at center
+
     mc "Ah! I think we should go to Cassin next. I saw her fidgeting with a weird looking purple mushroom."
+
+    hide mccall
+    show san diego at center
+
     sd "Wait up! I’m going too!"
+
+    hide san diego
+    show laffey at center
+
     la "While dancing?"
+
+    hide laffey
+    show san diego at center
+
     sd "Yeah! Dancing! LET’S GO!"
+
+    hide san diego
+    show mccall at center
+
     mc "She’s got some moves!"
+
+    hide mccall
+    show long island at center
     li "Da-daan! The dancer has joined my party!"
+
+    hide long island
+    show laffey at center
+
     la "Attack power UP? Heh. Right?"
 
+    scene black with Dissolve(2)
 
     # This ends the game.
 
