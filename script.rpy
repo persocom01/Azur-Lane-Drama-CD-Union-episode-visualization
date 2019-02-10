@@ -217,7 +217,7 @@ label start:
 
     hide mccall
     show laffey at right
-    show long_island dark behind laffey with dis
+    show long_island dark with dis
     $ box = 2
 
     la "Did we risk our lives?"
@@ -228,14 +228,14 @@ label start:
     mc "Well, I can’t argue with that."
 
     show long_island at left, shake2
-    show mccall dark behind long_island with dis
+    show mccall dark with dis
     $ box = 1
 
     li "But actually I wish I wasn’t so careful just yesterday. I should’ve gone."
 
     hide mccall
     show laffey at right
-    show long_island dark behind laffey with dis
+    show long_island dark with dis
     $ box = 2
 
     la "Why? Do you like mushrooms?"
@@ -253,7 +253,7 @@ label start:
 
     hide mccall
     show laffey at right
-    show long_island dark behind laffey with dis
+    show long_island dark with dis
     $ box = 2
 
     la "Why are you staring at our breasts, Long Island?"
@@ -297,7 +297,7 @@ label start:
 
     hide mccall
     show laffey at right
-    show long_island dark behind laffey with dis
+    show long_island dark with dis
     $ box = 2
 
     la "What do you mean?"
@@ -316,7 +316,7 @@ label start:
 
     hide mccall
     show laffey at right
-    show long_island dark behind laffey with dis
+    show long_island dark with dis
     $ box = 2
 
     la "Winners?"
@@ -367,7 +367,7 @@ label start:
 
     hide mccall
     show laffey at right
-    show long_island dark behind laffey with dis
+    show long_island dark with dis
     $ box = 2
 
     la "But… I’m still the same."
@@ -386,26 +386,26 @@ label start:
 
     hide mccall
     show laffey at right
-    show long_island dark behind laffey with dis
+    show long_island dark with dis
     $ box = 2
 
     la "Now that you mention it, there were different colored mushrooms."
 
     hide laffey
     show mccall at right
-    show long_island dark behind mccall with dis
+    show long_island dark with dis
 
     mc "I think I ate like a red and white striped one."
 
     hide mccall
     show laffey at right
-    show long_island dark behind laffey with dis
+    show long_island dark with dis
 
     la "Yeah. Same."
 
     show long_island dark at shake2
     show long_island
-    show laffey dark behind long_island with dis
+    show laffey dark with dis
     $ box = 1
 
     li "Hmm. Then the red and white striped one isn’t it. Neither of you took any other mushrooms? Everyone took home what they couldn’t finish eating."
@@ -419,7 +419,7 @@ label start:
 
     hide laffey
     show mccall at right
-    show long_island dark behind mccall with dis
+    show long_island dark with dis
 
     mc "Me too."
 
@@ -430,49 +430,48 @@ label start:
 
     li "All right. Damn. Okay, we gotta go find some other partygoers. Right! Let’s make our breasts bigger so the Commander will drool at us! Let’s go!"
 
+    window hide
     hide mccall
     show laffey at right, grabL
+    pause 0.5
+    show long_island at bobble1
 
     la "Wait."
 
-    show laffey dark
+    show laffey dark behind long_island
     show long_island
     with dis
     $ box = 1
 
     li "What’s wrong?"
 
-    show long_island dark
+    show long_island dark behind laffey
     show laffey
     with dis
-    $ box = 2
 
     la "The Commander… likes big breasts?"
 
-    show laffey dark
+    show laffey dark behind long_island
     show long_island
     with dis
     $ box = 1
 
     li "Umm… he didn’t say so directly. But the bigger ones seem to have more charm."
 
-    show long_island dark
+    show long_island dark behind laffey
     show laffey
     with dis
-    $ box = 2
 
     la "Laffey will go too."
 
-    show laffey dark
+    show long_island dark at bobble1
     show long_island
-    with dis
-    $ box = 1
+    show laffey dark behind long_island with dis
 
     li "Really!? Ehehehe. My party has grown! What do you think, McCall?"
 
-    hide laffey
     show mccall at right
-    show long_island dark behind mccall with dis
+    show long_island dark with dis
     $ box = 2
 
     mc "Um. I don’t really care about the size of my chest…"
@@ -484,30 +483,30 @@ label start:
 
     li "So, you’re not coming?"
 
-    show long_island dark
+    show mccall dark at shake1
     show mccall
-    with dis
+    show long_island dark with dis
     $ box = 2
 
     mc "Umm… I do want to know if the rumor is true. I’ll go."
 
-    show long_island dark at bobble2
+    show long_island dark at bobble3
     show long_island with dissolve
     show mccall dark behind long_island with dis
     $ box = 1
 
     li "Da-daaaaan! McCall has joined my party! It’s time for us three to set out on our mushroom search adventure. Let’s go!"
 
-    hide long_island
-    show laffey at center
+    show laffey dark at bobble1
+    show laffey
+    show long_island dark behind laffey with dis
 
     la "Ok."
 
-    scene black
 
-    "Break"
+    scene bg room with Fade(2, 5, 2)
 
-    scene bg room
+
     show long_island at center
 
     li "And so, Long Island and her merry men arrived at San Diego’s room."

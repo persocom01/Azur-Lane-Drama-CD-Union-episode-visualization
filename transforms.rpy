@@ -67,7 +67,7 @@ transform move_righta:
 
 
 transform move_right_off:
-    linear 1 xanchor 0.0 xpos 1.0
+    linear 1 xpos 1820
 
 
 transform bobble1:
