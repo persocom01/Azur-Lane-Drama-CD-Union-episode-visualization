@@ -104,12 +104,12 @@ define gui.textbox_yalign = 1.0
 
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
-define gui.name_xpos = 0.0
+define gui.name_xpos = 165
 define gui.name_ypos = -8
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
-define gui.name_xalign = 0.0
+define gui.name_xalign = 0.5
 
 ## The width, height, and borders of the box containing the character's name, or
 ## None to automatically size it.
@@ -118,7 +118,7 @@ define gui.namebox_height = 46
 
 ## The borders of the box containing the character's name, in left, top, right,
 ## bottom order.
-define gui.namebox_borders = Borders(165, 8, 5, 3)
+define gui.namebox_borders = Borders(5, 8, 5, 3)
 
 ## If True, the background of the namebox will be tiled, if False, the
 ## background of the namebox will be scaled.

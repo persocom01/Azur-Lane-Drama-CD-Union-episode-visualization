@@ -153,13 +153,13 @@ style namebox:
     padding gui.namebox_borders.padding
 
 style namebox2:
-    xpos 1.0
-    xanchor 1.0
+    xpos 1115
+    xanchor gui.name_xalign
     xsize gui.namebox_width
     ypos gui.name_ypos
     ysize gui.namebox_height
 
-    background Frame(im.Flip("gui/namebox.png", horizontal=True), Borders(165, 8, 5, 3), tile=gui.namebox_tile, xalign=gui.name_xalign)
+    background Frame(im.Flip("gui/namebox.png", horizontal=True), gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
 style say_label:
@@ -269,12 +269,23 @@ screen quick_menu():
 
             textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
+            # textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Save") action ShowMenu('save')
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
             textbutton _("Prefs") action ShowMenu('preferences')
+
+        imagebutton:
+            xanchor 1.0
+            xpos 1280
+            yanchor 0.0
+            ypos 0
+
+            idle "gui/Skip.png" # Image of the button.
+            action Skip() # When left clicked.
+            alternate Skip(fast=True, confirm=True) # When right clicked
+            at skip_button_animation
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever

@@ -21,11 +21,9 @@ label start:
 
     window hide
     scene black
-    show skip at skip_button, skip_button_animation onlayer ontop
     show opening_text "Azur Lane Drama CD Union Episode\n\nPart 1" with Dissolve(2)
     hide opening_text with Dissolve(2)
     scene bg beach
-    show skip at skip_button, skip_button_animation onlayer ontop
     show next at next_prompt, next_prompt_animation onlayer ontop
     with Dissolve(2)
 
@@ -41,11 +39,9 @@ label start:
     la "This is good ice cream, McCall. Thanks."
 
     window hide
-    show laffey:
-        linear 0.5 xpos 270
+    show laffey at move_left
     show laffey dark with dissolve
-    show laffey dark:
-        xpos 270
+    show laffey dark at move_lefta
     show mccall dark at right
     show mccall with dis
     $ box = 2
@@ -53,7 +49,6 @@ label start:
     mc "Don’t mention it. I just wanted my good friend Laffey to know how great it is to eat popsicles on the beach under a parasol."
 
     show mccall dark
-    with dis
     show laffey
     with dis
     $ box = 1
@@ -61,7 +56,6 @@ label start:
     la "Uh huh. It’s really great."
 
     show laffey dark
-    with dis
     show mccall
     with dis
     $ box = 2
@@ -69,7 +63,6 @@ label start:
     mc "Right? Nothing better than wasting your day off eating ice cream until the sun sets."
 
     show mccall dark
-    with dis
     show laffey
     with dis
     $ box = 1
@@ -77,7 +70,6 @@ label start:
     la "But it’s only 10AM. Ice cream is great and all, but won’t you get a stomach ache eating that much?"
 
     show laffey dark
-    with dis
     show mccall
     with dis
     $ box = 2
@@ -85,7 +77,6 @@ label start:
     mc "Nope. I’ve got an iron gut when it comes to ice cream."
 
     show mccall dark
-    with dis
     show laffey
     with dis
     $ box = 1
@@ -93,7 +84,6 @@ label start:
     la "Iron gut? Not a second stomach?"
 
     show laffey dark
-    with dis
     show mccall
     with dis
     $ box = 2
@@ -101,7 +91,6 @@ label start:
     mc "Yeah. My stomach is strong as iron!"
 
     show mccall dark
-    with dis
     show laffey
     with dis
     $ box = 1
@@ -109,7 +98,6 @@ label start:
     la "Lucky. I think two or three is my limit. Like how I could barely eat anything at the mushroom party yesterday. It sucked."
 
     show laffey dark
-    with dis
     show mccall
     with dis
     $ box = 2
@@ -117,7 +105,6 @@ label start:
     mc "I don’t really care for mushrooms either. But hey, at least you can drink me under the table, Laffey."
 
     show mccall dark
-    with dis
     show laffey
     with dis
     $ box = 1
@@ -125,7 +112,6 @@ label start:
     la "That’s true."
 
     show laffey dark
-    with dis
     show mccall
     with dis
     $ box = 2
@@ -133,7 +119,6 @@ label start:
     mc "It’s hard to fill up on your favorite things, but if you get too greedy, you’ll pay for it in the end. As for mushrooms, you might be better off not eating too many."
 
     show mccall dark
-    with dis
     show laffey
     with dis
     $ box = 1
@@ -141,7 +126,6 @@ label start:
     la "What do you mean?"
 
     show laffey dark
-    with dis
     show mccall
     with dis
     $ box = 2
@@ -149,7 +133,6 @@ label start:
     mc "Like, you know all those mushrooms San Diego’s been growing in her room?"
 
     show mccall dark
-    with dis
     show laffey
     with dis
     $ box = 1
@@ -157,7 +140,6 @@ label start:
     la "That’s a little weird no matter which way you put it."
 
     show laffey dark
-    with dis
     show mccall
     with dis
     $ box = 2
@@ -168,7 +150,7 @@ label start:
     with dis
     $ box = 1
 
-    "{color=#AAED60}Both{/color}" "Yeahhh."
+    "{color=#AAED60}Laffey & Mccall{/color}" "Yeahhh."
 
     hide laffey
     hide mccall
@@ -179,12 +161,9 @@ label start:
 
     mc "It’s nice to just unwind and eat."
 
-    window hide
-    show mccall:
-        linear 0.5 xpos 1010
+    show mccall at move_right
     show mccall dark with dissolve
-    show mccall dark:
-        xpos 1010
+    show mccall dark at move_righta
     show laffey at left
 
     la "I think the red and white ones are prettier so they’re tastier."
@@ -192,16 +171,16 @@ label start:
     show mccall
     with dis
 
-    "{color=#AAED60}Both{/color}" "Ahhh. So relaxing."
+    "{color=#AAED60}Laffey & Mccall{/color}" "Ahhh. So relaxing."
 
     hide laffey
     hide mccall
-    show long island dark at center
-    show long island with dis
+    show long_island dark at center
+    show long_island with dis
 
     li "Heyyy! I found Laffey and McCall! Heeeeyyyy!"
 
-    hide long island
+    hide long_island
     show laffey at center
 
     la "Long Island."
@@ -212,85 +191,94 @@ label start:
     mc "Where’s the fire?"
 
     hide mccall
-    show long island at center, bobble2
+    show long_island at center, bobble2
 
     li "Listen up. Both of you went to San Diego’s mushroom party last night?"
 
-    hide long island
+    hide long_island
     show laffey at center
 
     la "Yup. We were there. We were just talking about it actually."
 
-    hide laffey
-    show mccall at center
+    show laffey at move_left
+    show laffey dark with dissolve
+    show laffey dark at move_lefta
+    show mccall dark at right
+    show mccall with dis
+    $ box = 2
 
     mc "Uh huh. You didn’t go, Long Island?"
 
-    hide mccall
-    show long island at center, bobble1
+    hide laffey
+    show long_island at left, bobble1
+    $ box = 1
 
     li "I may be a ghost, but I’m not gonna risk my life eating unidentified mushrooms."
 
-    hide long island
-    show laffey at center
+    hide mccall
+    show laffey at right
+    show long_island dark behind laffey with dis
+    $ box = 2
 
     la "Did we risk our lives?"
 
     hide laffey
-    show mccall at center
+    show mccall at right
 
     mc "Well, I can’t argue with that."
 
-    hide mccall
-    show long island at center, shake2
+    show long_island at left, shake2
+    show mccall dark behind long_island with dis
+    $ box = 1
 
     li "But actually I wish I wasn’t so careful just yesterday. I should’ve gone."
 
-    hide long island
-    show laffey at center
+    hide mccall
+    show laffey at right
+    show long_island dark behind laffey with dis
+    $ box = 2
 
     la "Why? Do you like mushrooms?"
 
     hide laffey
-    show mccall at center
+    show mccall at right
 
     mc "I think not going was the right move. Honestly."
 
-    hide mccall
-    show long island at center, shake2
+    show mccall dark with dis
+    show long_island at left with dis
+    $ box = 1
 
     li "It actually looks like you haven’t changed at all. Lemme see."
 
-    hide long island
-    show laffey at center
+    hide mccall
+    show laffey at right
+    show long_island dark behind laffey with dis
+    $ box = 2
 
     la "Why are you staring at our breasts, Long Island?"
 
     hide laffey
-    show mccall at center
+    show mccall at right
 
     mc "You’re creeping me out. What the hell?"
 
-    window hide
-    show mccall:
-        linear 0.5 xpos 1010
-    show mccall dark with dissolve
-    show mccall dark:
-        xpos 1010
-    show long island at left
+    show mccall dark
+    show long_island
+    with dis
+    $ box = 1
 
     li "Hmm. Seems I can’t tell without a more direct approach!"
 
-    window hide
-    show mccall
-    show long island at grope
+    show mccall behind long_island
+    show long_island at grabR
     pause 0.5
     show mccall at bobble1
 
     "(BOING)"
 
     hide mccall
-    hide long island
+    hide long_island
     show laffey at center
 
     la "Gasp"
@@ -300,52 +288,67 @@ label start:
 
     mc "Wh- what? Don’t just suddenly grab my chest like that."
 
-    hide mccall
-    show long island at center, shake1
+    show mccall at move_right
+    show mccall dark with dissolve
+    show mccall dark at move_righta
+    show long_island at left
 
     li "Hmm. Turns out you haven’t changed at all. Too bad. It was all for nothing."
 
-    hide long island
-    show laffey at center
+    hide mccall
+    show laffey at right
+    show long_island dark behind laffey with dis
+    $ box = 2
 
     la "What do you mean?"
 
     hide laffey
-    show mccall at center, shake2
+    show mccall at right, shake2
 
     mc "Tell us what’s going on or I’ll get you with this popsicle."
 
-    hide mccall
-    show long island at center, bobble1
+    show long_island
+    show mccall dark
+    with dis
+    $ box = 1
 
     li "Your eyes are scaring me. Okay, settle down, I’ll explain. We can all come out winners here."
 
-    hide long island
-    show laffey at center
+    hide mccall
+    show laffey at right
+    show long_island dark behind laffey with dis
+    $ box = 2
 
     la "Winners?"
 
     hide laffey
-    show mccall at center
+    show mccall at right
 
     mc "Huh?"
 
-    hide mccall
-    show long island at center
+    show mccall dark
+    show long_island
+    with dis
+    $ box = 1
 
     li "The truth is I heard San Diego’s mushrooms have some awesome side effects."
 
-    hide long island
-    show mccall at center
+    show long_island dark
+    show mccall
+    with dis
+    $ box = 2
 
     mc "Awesome side effects? Like what?"
 
-    hide mccall
-    show long island at center
+    show mccall at move_right_off
+    show long_island dark at move_center
+    show long_island with dissolve
+    show long_island at move_centera
+    $ box = 1
 
     li "Check it out. If you eat San Diego’s mushrooms… your breasts… become bigger!"
 
-    hide long island
+    hide long_island
     show laffey at center, shake1
 
     la "Ugh. I’m sleepy."
@@ -355,112 +358,147 @@ label start:
 
     mc "Yeah. I think it’s time for a nap."
 
-    hide mccall
-    show long island at center, bobble2
+    show mccall at move_right
+    show mccall dark with dissolve
+    show mccall dark at move_righta
+    show long_island at left, bobble3
 
     li "Wait wait! Don’t nap! It’s true! Everyone’s been talking about it. This isn’t just something I made up!"
 
-    hide long island
-    show laffey at center
+    hide mccall
+    show laffey at right
+    show long_island dark behind laffey with dis
+    $ box = 2
 
     la "But… I’m still the same."
 
     hide laffey
-    show mccall at center
+    show mccall at right
 
     mc "Mine didn’t get any bigger either."
 
-    hide mccall
-    show long island at center
+    show mccall dark
+    show long_island
+    with dis
+    $ box = 1
 
     li "It’s gotta be because you didn’t eat enough, or you ate the wrong kind."
 
-    hide long island
-    show laffey at center
+    hide mccall
+    show laffey at right
+    show long_island dark behind laffey with dis
+    $ box = 2
 
     la "Now that you mention it, there were different colored mushrooms."
 
     hide laffey
-    show mccall at center
+    show mccall at right
+    show long_island dark behind mccall with dis
 
     mc "I think I ate like a red and white striped one."
 
     hide mccall
-    show laffey at center
+    show laffey at right
+    show long_island dark behind laffey with dis
 
     la "Yeah. Same."
 
-    hide laffey
-    show long island at center
+    show long_island dark at shake2
+    show long_island
+    show laffey dark behind long_island with dis
+    $ box = 1
 
     li "Hmm. Then the red and white striped one isn’t it. Neither of you took any other mushrooms? Everyone took home what they couldn’t finish eating."
 
-    hide long island
-    show laffey at center
+    show long_island dark
+    show laffey
+    with dis
+    $ box = 2
 
     la "I was too full so I didn’t take any."
 
     hide laffey
-    show mccall at center
+    show mccall at right
+    show long_island dark behind mccall with dis
 
     mc "Me too."
 
-    hide mccall
-    show long island at center
+    show mccall dark
+    show long_island
+    with dis
+    $ box = 1
 
     li "All right. Damn. Okay, we gotta go find some other partygoers. Right! Let’s make our breasts bigger so the Commander will drool at us! Let’s go!"
 
-    hide long island
-    show laffey at center
+    hide mccall
+    show laffey at right, grabL
 
     la "Wait."
 
-    hide laffey
-    show long island at center
+    show laffey dark
+    show long_island
+    with dis
+    $ box = 1
 
     li "What’s wrong?"
 
-    hide long island
-    show laffey at center
+    show long_island dark
+    show laffey
+    with dis
+    $ box = 2
 
     la "The Commander… likes big breasts?"
 
-    hide laffey
-    show long island at center
+    show laffey dark
+    show long_island
+    with dis
+    $ box = 1
 
     li "Umm… he didn’t say so directly. But the bigger ones seem to have more charm."
 
-    hide long island
-    show laffey at center
+    show long_island dark
+    show laffey
+    with dis
+    $ box = 2
 
     la "Laffey will go too."
 
-    hide laffey
-    show long island at center
+    show laffey dark
+    show long_island
+    with dis
+    $ box = 1
 
     li "Really!? Ehehehe. My party has grown! What do you think, McCall?"
 
-    hide long island
-    show mccall at center
+    hide laffey
+    show mccall at right
+    show long_island dark behind mccall with dis
+    $ box = 2
 
     mc "Um. I don’t really care about the size of my chest…"
 
-    hide mccall
-    show long island at center
+    show mccall dark
+    show long_island
+    with dis
+    $ box = 1
 
     li "So, you’re not coming?"
 
-    hide long island
-    show mccall at center
+    show long_island dark
+    show mccall
+    with dis
+    $ box = 2
 
     mc "Umm… I do want to know if the rumor is true. I’ll go."
 
-    hide mccall
-    show long island at center
+    show long_island dark at bobble2
+    show long_island with dissolve
+    show mccall dark behind long_island with dis
+    $ box = 1
 
     li "Da-daaaaan! McCall has joined my party! It’s time for us three to set out on our mushroom search adventure. Let’s go!"
 
-    hide long island
+    hide long_island
     show laffey at center
 
     la "Ok."
@@ -470,11 +508,11 @@ label start:
     "Break"
 
     scene bg room
-    show long island at center
+    show long_island at center
 
     li "And so, Long Island and her merry men arrived at San Diego’s room."
 
-    hide long island
+    hide long_island
     show laffey at center
 
     la "We’re merry?"
@@ -485,29 +523,29 @@ label start:
     mc "Well, as merry as a group hunting for breast-growing mushrooms can be."
 
     hide mccall
-    show long island at center
+    show long_island at center
 
     li "Hey, cut the chatter, it’s an ambush! There may still be mushrooms here."
 
-    hide long island
+    hide long_island
 
     "Knock knock"
 
-    show long island at center
+    show long_island at center
 
     li "Anybody home!?"
 
-    show san diego dark at center
-    show san diego with dis
+    show san_diego dark at center
+    show san_diego with dis
 
     sd "Yeess? Who is iiit?"
 
-    hide san diego
-    show long island at center
+    hide san_diego
+    show long_island at center
 
     li "It’s Long Island!"
 
-    hide long island
+    hide long_island
     show laffey at center
 
     la "Laffey and McCall too."
@@ -518,21 +556,21 @@ label start:
     mc "Can we come in?"
 
     hide mccall
-    show san diego at center
+    show san_diego at center
 
     sd "Sure! Ah! Just give me a minute here. Let yourselves in! Welcome welcome!"
 
-    hide san diego
-    show long island at center
+    hide san_diego
+    show long_island at center
 
     li "All right, coming in. Sorry to bother you!"
 
-    hide long island
-    show san diego at center
+    hide long_island
+    show san_diego at center
 
     sd "Hello! Lovely weather, isn’t it? I’m a little tired but let’s dance!"
 
-    hide san diego
+    hide san_diego
     show laffey at center
 
     la "San Diego’s really dancing."
@@ -543,130 +581,130 @@ label start:
     mc "She seems kind of tense. Maybe some ice cream would calm her down."
 
     hide mccall
-    show san diego at center
+    show san_diego at center
 
     sd "Huuuh? That’s right! I’ve been dancing nonstop! Kinda weird!"
 
-    hide san diego
-    show long island at center
+    hide san_diego
+    show long_island at center
 
     li "You didn’t even notice you’ve been dancing? It must be… ah! There’s a half-eaten mushroom on the table there!"
 
-    hide long island
+    hide long_island
     show laffey at center
 
     la "Did San Diego eat it?"
 
     hide laffey
-    show san diego at center
+    show san_diego at center
 
     sd "Yeah! I ate it! Just about the time I wanted to break into dance! Everybody join me!"
 
-    hide san diego
+    hide san_diego
     show mccall at center
 
     mc "No. The real reason you’re dancing is because of this mushroom."
 
     hide mccall
-    show long island at center
+    show long_island at center
 
     li "That sounds right. So then… this star-shaped yellow one with spots all over it must be a dancing mushroom!"
 
-    hide long island
-    show san diego at center
+    hide long_island
+    show san_diego at center
 
     sd "Yeeaahh! Dancing dancing!!"
 
-    hide san diego
+    hide san_diego
     show laffey at center
 
     la "So then, what were the ones we ate?"
 
     hide laffey
-    show long island at center
+    show long_island at center
 
     li "Those were fail mushrooms!"
 
-    hide long island
+    hide long_island
     show mccall at center
 
     mc "Feels more like a win mushroom to me."
 
     hide mccall
-    show san diego at center
+    show san_diego at center
 
     sd "Win? Fail? Nah! I dunno why everybody came to my room, but you better dance with me!"
 
-    hide san diego
+    hide san_diego
     show laffey at center
 
     la "Not now. Laffey and friends came to find the mushroom that makes your breasts bigger."
 
     hide laffey
-    show long island at center
+    show long_island at center
 
     li "That’s right. Long Island and her band of merry men are on a quest for the BUST UP mushroom!"
 
-    hide long island
+    hide long_island
     show mccall at center
 
     mc "When you call it a BUST UP mushroom I feel like we’ve fallen into something really shady."
 
     hide mccall
-    show san diego at center
+    show san_diego at center
 
     sd "Eeeeeeh? Is there really a mushroom like that? Amazing!"
 
-    hide san diego
-    show long island at center
+    hide san_diego
+    show long_island at center
 
     li "Yeah! Do you have any more mushrooms laying around, San Diego?"
 
-    hide long island
-    show san diego at center
+    hide long_island
+    show san_diego at center
 
     sd "Nope! That dancing mushroom I just ate was the last one!"
 
-    hide san diego
+    hide san_diego
     show laffey at center
 
     la "Damn."
 
     hide laffey
-    show long island at center
+    show long_island at center
 
     li "But we did learn the effect of one type of mushroom. Let’s press on to find the next!"
 
-    hide long island
+    hide long_island
     show mccall at center
 
     mc "Ah! I think we should go to Cassin next. I saw her fidgeting with a weird looking purple mushroom."
 
     hide mccall
-    show san diego at center
+    show san_diego at center
 
     sd "Wait up! I’m going too!"
 
-    hide san diego
+    hide san_diego
     show laffey at center
 
     la "While dancing?"
 
     hide laffey
-    show san diego at center
+    show san_diego at center
 
     sd "Yeah! Dancing! LET’S GO!"
 
-    hide san diego
+    hide san_diego
     show mccall at center
 
     mc "She’s got some moves!"
 
     hide mccall
-    show long island at center
+    show long_island at center
     li "Da-daan! The dancer has joined my party!"
 
-    hide long island
+    hide long_island
     show laffey at center
 
     la "Attack power UP? Heh. Right?"
