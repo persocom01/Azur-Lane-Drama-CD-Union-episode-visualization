@@ -9,8 +9,8 @@ You need the Ren'Py engine to run this project. Add the project folder to Ren'Py
 
 ## Built With
 
-* [https://www.renpy.org/) - Engine version 7.1.3.
-* [https://azurlane.yo-star.com/#/) - Art assets.
+* [https://www.renpy.org/] - Engine version 7.1.3.
+* [https://azurlane.yo-star.com/#/] - Art assets.
 * Python 2.7
 
 ## Current status

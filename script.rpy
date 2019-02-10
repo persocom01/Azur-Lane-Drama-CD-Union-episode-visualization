@@ -491,8 +491,8 @@ label start:
     mc "Umm… I do want to know if the rumor is true. I’ll go."
 
     show long_island dark at bobble3
-    show long_island with dissolve
-    show mccall dark behind long_island with dis
+    show mccall dark with dis
+    show long_island
     $ box = 1
 
     li "Da-daaaaan! McCall has joined my party! It’s time for us three to set out on our mushroom search adventure. Let’s go!"
@@ -511,21 +511,28 @@ label start:
 
     li "And so, Long Island and her merry men arrived at San Diego’s room."
 
-    hide long_island
-    show laffey at center
+    window hide
+    show long_island at move_left
+    show long_island dark with dissolve
+    show long_island dark at move_lefta
+    show laffey at right
+    $ box = 2
 
     la "We’re merry?"
 
     hide laffey
-    show mccall at center
+    show mccall at right
 
     mc "Well, as merry as a group hunting for breast-growing mushrooms can be."
 
-    hide mccall
-    show long_island at center
+    show mccall dark
+    show long_island
+    with dis
+    $ box = 1
 
     li "Hey, cut the chatter, it’s an ambush! There may still be mushrooms here."
 
+    hide mccall
     hide long_island
 
     "Knock knock"
@@ -534,12 +541,10 @@ label start:
 
     li "Anybody home!?"
 
-    show san_diego dark at center
-    show san_diego with dis
+    hide long_island
 
     sd "Yeess? Who is iiit?"
 
-    hide san_diego
     show long_island at center
 
     li "It’s Long Island!"
@@ -555,17 +560,16 @@ label start:
     mc "Can we come in?"
 
     hide mccall
-    show san_diego at center
 
     sd "Sure! Ah! Just give me a minute here. Let yourselves in! Welcome welcome!"
 
-    hide san_diego
     show long_island at center
 
     li "All right, coming in. Sorry to bother you!"
 
     hide long_island
-    show san_diego at center
+    show san_diego dark at center
+    show san_diego with dis
 
     sd "Hello! Lovely weather, isn’t it? I’m a little tired but let’s dance!"
 
