@@ -1,4 +1,5 @@
 # Azur-Lane-Drama-CD-Union-episode-visualization
+
 A simple visual novel using the Ren'Py engine following the script of the Azur Lane Drama CD.
 
 This project is not a full fledged visual novel. Its main purpose is to mimic the appearance of story cutscenes in Azur Lane.
