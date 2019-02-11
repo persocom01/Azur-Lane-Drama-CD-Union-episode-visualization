@@ -15,13 +15,13 @@ You need the Ren'Py engine to run this project. Add the project folder to Ren'Py
 
 ## Current status
 
-In development.
+In beta.
 
 Current work:
-* Adding more animations.
+* Final checks
 
 Roadblocks:
-* Unable to see how to add "excitement lines" effect.
+* Unable to add "excitement lines" effect.
 
 ## Credits
 
