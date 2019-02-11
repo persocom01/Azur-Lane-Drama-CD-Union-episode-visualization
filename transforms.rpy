@@ -28,11 +28,11 @@ transform left:
     ypos 450
 
 
-transform move_left:
+transform moveL:
     linear 0.5 xpos 270
 
 
-transform move_lefta:
+transform moveL_after:
     xpos 270
 
 
@@ -43,11 +43,11 @@ transform center:
     ypos 450
 
 
-transform move_center:
+transform moveC:
     linear 0.5 xpos 640
 
 
-transform move_centera:
+transform moveC_after:
     xpos 640
 
 
@@ -58,15 +58,15 @@ transform right:
     ypos 450
 
 
-transform move_right:
+transform moveR:
     linear 0.5 xpos 1010
 
 
-transform move_righta:
+transform moveR_after:
     xpos 1010
 
 
-transform move_right_off:
+transform moveR_off:
     linear 1 xpos 1820
 
 
@@ -92,6 +92,29 @@ transform bobble3:
     easeout_quad 0.1 yoffset 0
     easein_quad 0.1 yoffset -25
     easeout_quad 0.1 yoffset 0
+
+
+transform dance:
+    xoffset 0 yoffset 0 rotate 0
+    linear 0.4 xoffset 50
+    easein_quad 0.1 yoffset -25 rotate 5
+    easeout_quad 0.1 yoffset 0 rotate 0
+    linear 0.4 xoffset 0
+    easein_quad 0.1 yoffset -25 rotate -5
+    easeout_quad 0.1 yoffset 0 rotate 0
+    pause 1
+    linear 0.4 xoffset 50
+    easein_quad 0.1 yoffset -25 rotate 5
+    easeout_quad 0.1 yoffset 0 rotate 0
+    linear 0.4 xoffset 0
+    easein_quad 0.1 yoffset -25 rotate -5
+    easeout_quad 0.1 yoffset 0 rotate 0
+    pause 3
+    repeat
+
+
+transform dance_after:
+    xoffset 0 yoffset 0 rotate 0
 
 
 transform grabL:

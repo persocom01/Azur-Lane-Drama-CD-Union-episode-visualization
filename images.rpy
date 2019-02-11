@@ -15,3 +15,5 @@ image long_island dark = im.MatrixColor(im.Scale("Long_Island.png", 648.8, 819.2
 
 image san_diego = im.Scale("San_Diego.png", 539.2, 819.2)
 image san_diego dark = im.MatrixColor(im.Scale("San_Diego.png", 539.2, 819.2), im.matrix.brightness(-0.6))
+
+image bg home = im.Scale("bg home.png", 1280, 720)
