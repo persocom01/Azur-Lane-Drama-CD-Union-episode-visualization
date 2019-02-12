@@ -26,7 +26,7 @@ Roadblocks:
 
 ## Credits
 
-* [https://twitter.com/Bloodnose2] - Bloodnose for drama CD and help in datamining assets from Azur Lane.
+* [https://twitter.com/Bloodnose2] - Bloodnose for drama CD script and help in datamining assets from Azur Lane.
 * [https://discordapp.com/invite/6ckxWYm] - Ren'Py discord for help in using the engine.
 
 ## License
