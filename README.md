@@ -19,7 +19,7 @@ You need the Ren'Py engine to run this project. Add the project folder to Ren'Py
 In beta.
 
 Current work:
-* Final checks
+* Final checks.
 
 Roadblocks:
 * Unable to add "excitement lines" effect.
@@ -31,4 +31,4 @@ Roadblocks:
 
 ## License
 
-MIT License - see [LICENSE.md](LICENSE.md) file for details.
+MIT License - see [LICENSE.md](LICENSE.md).
