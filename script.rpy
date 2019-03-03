@@ -158,19 +158,19 @@ label start:
 
     show mccall at center
 
-    mc "It’s nice to just unwind and eat."
+    mc "Now that I think about it, I'm amazed that we ate them."
 
     show mccall at moveR
     show mccall dark with dissolve
     show mccall dark at moveR_after
     show laffey at left
 
-    la "I think the red and white ones are prettier so they’re tastier."
+    la "I thought the red and white ones were pretty so I couldn't help myself."
 
     show mccall
     with dis
 
-    "{color=#AAED60}Laffey & Mccall{/color}" "Ahhh. So relaxing."
+    "{color=#AAED60}Laffey & Mccall{/color}" "Ahhh. Thankfully we're still fine."
 
     hide laffey
     hide mccall
